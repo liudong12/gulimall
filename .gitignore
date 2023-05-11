@@ -10,6 +10,18 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
+#设置一下哪些文件需要忽略，也就是不用提交到github。把所有小项目里面的垃圾文件都忽略掉
+#任意路径下的mvnw文件都要忽略掉，**表示任意路径
+**/mvnw
+**/mvnw.cmd
+
+**/.mvn
+**/target/
+
+.idea //同级的idea目录
+
+**/.gitignore
+
 # Eclipse m2e generated files
 # Eclipse Core
 .project
